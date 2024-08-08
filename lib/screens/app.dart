@@ -58,6 +58,7 @@ class _AppState extends State<App> {
         children: <Widget>[
           LiquidSwipe.builder(
             itemCount: questionsData.length,
+            disableUserGesture: true,
             itemBuilder: (context, index) {
               final currentQuestion = questionsData[index];
               return AnimatedMeshGradient(
@@ -178,14 +179,5 @@ class _AppState extends State<App> {
     setState(() {
       page = lpage;
     });
-    if (liquidController.currentPage + 1 > questionsData.length - 1) {
-      // LAST PAGE REACHED
-      KRoute.push(context: context, page: const GenerateAI());
-    } else {
-      liquidController.animateToPage(
-        page: liquidController.currentPage + 1,
-        duration: pageAnimationDuration,
-      );
-    }
   }
 }
