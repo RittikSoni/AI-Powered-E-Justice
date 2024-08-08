@@ -2,13 +2,11 @@ import 'dart:math';
 
 import 'package:e_justice_v2/common/common_functions.dart';
 import 'package:e_justice_v2/data/questions_data.dart';
-import 'package:e_justice_v2/providers/q_a_provider.dart';
 import 'package:e_justice_v2/routes/kroutes.dart';
 import 'package:e_justice_v2/screens/generate_ai.dart';
 import 'package:flutter/material.dart';
 import 'package:liquid_swipe/liquid_swipe.dart';
 import 'package:mesh_gradient/mesh_gradient.dart';
-import 'package:provider/provider.dart';
 
 class App extends StatefulWidget {
   const App({super.key});
@@ -156,8 +154,6 @@ class _AppState extends State<App> {
                   if (liquidController.currentPage + 1 >
                       questionsData.length - 1) {
                     // LAST PAGE REACHED
-                    print(Provider.of<QAProvider>(context, listen: false)
-                        .generateQuestion());
                     KRoute.push(context: context, page: const GenerateAI());
                   } else {
                     liquidController.animateToPage(
@@ -184,7 +180,6 @@ class _AppState extends State<App> {
     });
     if (liquidController.currentPage + 1 > questionsData.length - 1) {
       // LAST PAGE REACHED
-      print(Provider.of<QAProvider>(context, listen: false).generateQuestion());
       KRoute.push(context: context, page: const GenerateAI());
     } else {
       liquidController.animateToPage(

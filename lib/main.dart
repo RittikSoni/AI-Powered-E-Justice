@@ -14,7 +14,6 @@ void main() async {
   if (geminiAPIKey != null) {
     Gemini.init(
       apiKey: geminiAPIKey,
-      enableDebugging: true,
     );
     runApp(
       MultiProvider(
