@@ -1,6 +1,22 @@
 # AI Powered E-Justice
 
+[![Alt text](./assets/images/ai_e_justice.png?raw=true "Title")](https://youtu.be/G-bCYoU8ySs)
+
 **AI Powered E-Justice** is a groundbreaking Flutter application designed to democratize access to legal information globally. By leveraging the power of the Gemini API, this app serves as a comprehensive legal assistant, offering quick, accurate, and relevant legal information to users across the world. Whether you are a law student, a concerned citizen, or someone seeking advice on legal matters, AI Powered E-Justice is your go-to resource for understanding the law and your rights.
+
+## Download here
+
+**For Android:**
+
+- Download [here](https://github.com/RittikSoni/AI-Powered-E-Justice/releases/download/v1.0.0/ai-e-justice.apk)
+
+**For Web:**
+
+- Go to [AI E-Justice Web App](https://ai-justice-7a7a8.web.app/)
+
+**For Windows:**
+
+- Download [here](https://github.com/RittikSoni/AI-Powered-E-Justice/releases/download/v1.0.0/Windows.AI.E-Justice.rar)
 
 ## 🌟 Key Features
 
